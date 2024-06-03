@@ -1,6 +1,6 @@
 # Datadog Operator
 
-![Version: 1.7.0](https://img.shields.io/badge/Version-1.7.0-informational?style=flat-square) ![AppVersion: 1.6.0](https://img.shields.io/badge/AppVersion-1.6.0-informational?style=flat-square)
+![Version: 1.8.0](https://img.shields.io/badge/Version-1.8.0-informational?style=flat-square) ![AppVersion: 1.6.0](https://img.shields.io/badge/AppVersion-1.6.0-informational?style=flat-square)
 
 ## Values
 
@@ -43,6 +43,7 @@
 | operatorMetricsEnabled | string | `"true"` | Enable forwarding of Datadog Operator metrics and events to Datadog. |
 | podAnnotations | object | `{}` | Allows setting additional annotations for Datadog Operator PODs |
 | podLabels | object | `{}` | Allows setting additional labels for for Datadog Operator PODs |
+| priorityClassName | string | `""` | Allows to specify the priority class for Datadog Operator PODS |
 | rbac.create | bool | `true` | Specifies whether the RBAC resources should be created |
 | replicaCount | int | `1` | Number of instances of Datadog Operator |
 | resources | object | `{}` | Set resources requests/limits for Datadog Operator PODs |

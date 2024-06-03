@@ -162,6 +162,9 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
     {{- end }}
+    {{- with .Values.priorityClassName }}
+      priorityClassName: {{ . }}
+    {{- end }}
       volumes:
       {{- if .Values.datadogCRDs.migration.datadogAgents.conversionWebhook.enabled  }}
       - name: cert
