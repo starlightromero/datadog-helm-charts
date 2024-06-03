@@ -113,6 +113,8 @@ nodeSelector: {}
 tolerations: []
 # affinity -- Allows to specify affinity for Datadog Operator PODs
 affinity: {}
+# priorityClassName -- Allows to specify the priority class for Datadog Operator PODs
+priorityClassName: ""
 
 # installCRDs -- Set to true to deploy the Datadog's CRDs
 installCRDs: true
